@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simpleflex</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Raleway:300,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header id="home">
+        <!-- MAIN NAV -->
         <nav class="main-nav">
-            <img src="" alt="">
+            <img src="images/logo.png" alt="Simpleflex">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -21,6 +22,34 @@
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
+        <!-- /MAIN NAV -->
+        <!-- RESPONSIVE NAV -->
+        <nav class="responsive-nav">
+            <img src="images/logo.png" alt="Simpleflex">
+            <input type="checkbox" id="toggle" name="toggle">
+            <ul class="responsive-nav__ul">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <label for="toggle">
+                <i class="fa fa-bars"></i>
+            </label>
+        </nav>
+        
+        <!-- /RESPONSIVE NAV -->
         <div class="hero">
             <div class="">
                 <h2>
@@ -30,10 +59,12 @@
                 <p></p>
                 <a href="#" class="btn-primary">Purchase This Theme</a>
             </div>
-            <img src="" alt="">
+            <img src="images/mockup-1.png" alt="Mockup of Simpleflex website on iPhone">
         </div>
-        <div>
-
+        <div class="dots">
+            <a href="#"><i class="far fa-circle"></i></a>
+            <a href="#"><i class="far fa-circle"></i></a>
+            <a href="#"><i class="far fa-circle"></i></a>
         </div>
     </header>
 
@@ -181,7 +212,7 @@
                             <i class="fab fa-facebook-f facebook"></i>
                         </li>
                         <li>
-                            <i class="fab fa-twitter twitter"></i>
+                            <i class="fab fa-dribbble dribble"></i>
                         </li>
                         <li>
                             <i class="fab fa-pinterest-p pinterest"></i>
@@ -199,7 +230,7 @@
                             <i class="fab fa-twitter twitter"></i>
                         </li>
                         <li>
-                            <i class="fab fa-pinterest-p pinterest"></i>
+                            <i class="fab fa-flickr flickr"></i>
                         </li>
                     </ul>
                 </div>
@@ -211,10 +242,10 @@
                             <i class="fab fa-facebook-f facebook"></i>
                         </li>
                         <li>
-                            <i class="fab fa-twitter twitter"></i>
+                            <i class="fab fa-google-plus-g google"></i>
                         </li>
                         <li>
-                            <i class="fab fa-pinterest-p pinterest"></i>
+                            <i class="fab fa-linkedin-in linkedin"></i>
                         </li>
                     </ul>
                 </div>
@@ -339,7 +370,7 @@
                                 <i class="fab fa-twitter twitter"></i>
                             </li>
                             <li>
-                                <i class="fab fa-pinterest-p pinterest"></i>
+                                <i class="fab fa-google-plus-g google"></i>
                             </li>
                         </ul>
                     </div>
@@ -365,7 +396,7 @@
                                     <i class="fab fa-twitter twitter"></i>
                                 </li>
                                 <li>
-                                    <i class="fab fa-pinterest-p pinterest"></i>
+                                    <i class="fab fa-google-plus-g google"></i>
                                 </li>
                             </ul>
                         </div>
@@ -393,7 +424,7 @@
                                     <i class="fab fa-twitter twitter"></i>
                                 </li>
                                 <li>
-                                    <i class="fab fa-pinterest-p pinterest"></i>
+                                    <i class="fab fa-google-plus-g google"></i>
                                 </li>
                             </ul>
                         </div>
@@ -406,7 +437,11 @@
         </section> <!-- /.blog -->
 
         <section class="map">
-
+            <h5 class="main-phone-number">+91 544 567 8943</h5>
+            <h4 class="main-email">info@simpleflex.com</h4>
+            <p class="address">8605 Santa Monica Blvd, Los Angeles, California 97845, US</p>
+            <div class="triangle"></div>
+            <img src="images/map.png" alt="Map of Lower Manhattan, forget the address is LA.">
         </section> <!-- /.map -->
 
         <section class="contact-us">
@@ -414,11 +449,99 @@
                 <h3>Get in Touch</h3>
                 <p>Feel free to contact us at any time, nam liber tempor cum soluta nobis eleifend option congue nihil.</p>
             </div>
+
+            <ul class="social-total">
+                <li>
+                    <a href="#"><i class="fab fa-facebook-f facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-flickr flickr"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-google-plus-g google"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin-in linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-dribbble dribble"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-pinterest-p pinterest"></i></a>
+                </li>
+            </ul>
+                <form action="http://www.focuspocus.io/magic/ea56e8bf73be91a7e8892a32c78fa42b" method="POST" class="myForm" autocomplete="off"
+                    name="myForm">
+                    <label for="name" class="visuallyhidden">Name</label>
+                    <input type="text" class="name" name="name" placeholder="Name">
+                    <label for="email" class="visuallyhidden">Email Address</label>
+                    <input type="text" class="email" placeholder="Email">
+                    <label for="message" class="visuallyhidden"></label>
+                    <textarea name="message" rows="5" class="message" placeholder="Message"></textarea>
+                    <button type="submit" class="form-button btn-secondary">
+                        Send
+                    </button>
+                </form>
         </section> <!-- /.contact-us -->
     </main>
 
     <footer>
+        <div class="footer-card-container">
+            <div class="widget">
+                <h3 class="footer-card-heading">Text Widget</h3>
+                <p>At vero eos et accusam et justo duo dolores et ea rebum.. Lorem ipsum dolor sit amet. Nam liber tempor soluta nobis eleifend
+                option congue nihil imperdiet doming id quod mazim placerat. facer possim assum. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </div>
 
+            <div class="widget">
+                <h3 class="footer-card-heading">Recent Posts</h3>
+                <div class="post-card">
+                    <img src="images/footer-1.png" alt="Graffiti">
+                    <div class="text">
+                        <h3 class="recent-posts-heading">At vero eos et accusam justo duo dolores.</h3>
+                        <h4 class="date">Dec 31, 2013</h4>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <img src="images/footer-2.png" alt="Graphic text 'Alip'">
+                    <div class="text">
+                        <h3 class="recent-posts-heading">Tempor invidunt ut labore et dolore.</h3>
+                        <h4 class="date">Dec 18, 2013</h4>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <img src="images/footer-3.png" alt="Many different coloured boxes">
+                    <div class="text">
+                        <h3 class="recent-posts-heading">Magna aliquyam erat, sed diam voluptua.</h3>
+                        <h4 class="date">Nov 29, 2013</h4>
+                    </div>
+                </div>
+
+            </div> <!-- /.recent-posts -->
+
+            <div class="widget">
+                <h3 class="footer-card-heading">Our Newsletter</h3>
+                <p>Please, subscribe to our latest news to be updated.</p>
+                <form action="http://www.focuspocus.io/magic/ea56e8bf73be91a7e8892a32c78fa42b" method="POST" class="subscribe" autocomplete="on"
+                    name="subscribe">
+                    <label for="subscription-email" class="visuallyhidden">Your Email Address</label>
+                    <input type="text" class="subscription-email">
+                    <input type="submit" class="subscribe-button" value="SEND">
+                </form>
+            </div>
+
+            <div class="widget">
+                <h3 class="footer-card-heading">Flickr Wirget</h3>
+                <img src="images/footer-4.png" alt="Gallery of flickr images">
+            </div>
+        </div> <!-- /.footer-card-container -->
+        <h4>© Copyright 2014. Simpleflex Template by <a href="https://www.hackeryou.com">DX Templates</a></h4>
     </footer>
 </body>
 </html>
