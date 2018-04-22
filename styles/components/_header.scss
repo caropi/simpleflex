@@ -45,6 +45,7 @@ header.section-triangle::after {
     display: none;
 }
 .hero-gradient {
+    z-index: 3;
     background: linear-gradient(to right, rgba(247,197,71,1) 0%, rgba(247,197,71,1) 50%, rgba(238,190,69,1) 50%, rgba(238,190,69,1) 100%);
 }
 
@@ -87,11 +88,12 @@ header.section-triangle::after {
     text-align: center;
     z-index: 20;
     position: relative;
-    padding-bottom: 2%;
+    padding: 2%;
     a {
         font-size: 1.8rem;
         color:#fff;
         transition: 0.3s;
+        padding: 3px;
         :hover {
             color: $maindarktext;
         }

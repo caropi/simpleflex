@@ -10,13 +10,49 @@
 
 // section hero styles 
 .section-hero {
+    text-align: center;
+    position: relative;
+    padding: 5%;
     h3 {
         color: #fff;
         font-size: 6rem;
-        text-transform: uppercase;
+        text-transform: uppercase; 
+        font-weight: 300;
+        margin: 0;
     }
     p {
         color: $secondarygrey;
         font-size: 2rem;
+        width: 60%;
+        line-height: 30px;
+        margin: 0 auto;
+        letter-spacing: 1px;
     }
+
+}
+.section-hero::after {
+    content: '';
+    height: 1px;
+    border-top: 1px solid $dividergrey;
+    width: 17%;
+    position: absolute;
+    left: 41.5%;
+    right: 42%;
+    top: 85%;
+}
+
+h4.figure-heading {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 5%;
+}
+
+.about-us-card p,
+.skills__div--card figcaption,
+.blog-container p {
+    font-size: 1.6rem;
+    color: $secondarygrey;
+    text-align: center;
+    display: inline-block;
 }

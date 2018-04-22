@@ -47,18 +47,17 @@ a.btn-primary {
     transition: 0.3s;
 }
 
-header.section-triangle::after {
+.section-triangle::after {
     left: 50%;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     -webkit-transform: translateX(-50%) rotate(-45deg);
     transform: translateX(-50%) rotate(-45deg);
     position: absolute;
     content: '';
     pointer-events: none;
-    top: 90%;
+    top: 96%;
     z-index: 1;
-    background: linear-gradient(135deg, rgba(247,197,71,1) 0%, rgba(247,197,71,1) 50%, rgba(238,190,69,1) 50%, rgba(238,190,69,1) 100%);
 }
 
 a.btn-primary:hover {
@@ -68,5 +67,59 @@ a.btn-primary:hover {
 .map {
     img {
         width: 100%;
+    }
+}
+
+// ABOUT US SECTION
+
+.about-us {
+    background: $lightbg;
+}
+
+.about-us__card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    .about-us-card {
+        flex-wrap: wrap;
+        text-align: center;
+        max-width: 370px;
+        min-width: 250px;
+        flex: 3 1;
+        padding: 4% 1%;
+        background: $mediumgrey;  
+        p {
+            font-size: 1.6rem;
+            color: $secondarygrey;
+            text-align: center;
+            width: 90%;
+            display: inline-block;
+            line-height: 24px;
+            margin: 0;
+        }
+
+    }
+    .card1 {
+        border-bottom: 10px solid $yellow;
+    }
+    .card2 {
+        border-bottom: 10px solid $red;
+    }
+    .card3 {
+        border-bottom: 10px solid $green;
+    }
+}
+
+
+// SKILLS SECTION 
+
+.skills {
+    background: $darkgreybg;
+    .skills__container__div--card {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-bottom: 10%;
     }
 }
