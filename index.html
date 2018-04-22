@@ -10,72 +10,78 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header id="home">
+    <header id="home" class="section-triangle">
         <!-- MAIN NAV -->
-        <nav class="main-nav">
-            <img src="images/logo.png" alt="Simpleflex">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- /MAIN NAV -->
-        <!-- RESPONSIVE NAV -->
-        <nav class="responsive-nav">
-            <img src="images/logo.png" alt="Simpleflex">
-            <input type="checkbox" id="toggle" name="toggle">
-            <ul class="responsive-nav__ul">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#blog">Blog</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-            <label for="toggle">
-                <i class="fa fa-bars"></i>
-            </label>
-        </nav>
-        
-        <!-- /RESPONSIVE NAV -->
-        <div class="hero">
-            <div class="">
-                <h2>
-                    <span>Everything</span>
-                    You Need
-                </h2>
-                <p></p>
-                <a href="#" class="btn-primary">Purchase This Theme</a>
-            </div>
-            <img src="images/mockup-1.png" alt="Mockup of Simpleflex website on iPhone">
+        <div class="nav-container">
+            <nav class="main-nav wrapper">
+                <div class="logo-container">
+                    <a href="#home">
+                        <img src="images/logo.png" alt="Simpleflex">
+                    </a>
+                </div>
+                <ul class="main-nav__ul">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact" class="no-padding-right">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- /MAIN NAV -->
+            <!-- RESPONSIVE NAV -->
+            <nav class="responsive-nav wrapper">
+                <img src="images/logo.png" alt="Simpleflex">
+                <input type="checkbox" id="toggle" name="toggle">
+                <ul class="responsive-nav__ul">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <label for="toggle">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </nav>
+            <!-- /RESPONSIVE NAV -->
         </div>
-        <div class="dots">
-            <a href="#"><i class="far fa-circle"></i></a>
-            <a href="#"><i class="far fa-circle"></i></a>
-            <a href="#"><i class="far fa-circle"></i></a>
+        <div class="hero-gradient">
+            <div class="hero-container wrapper clearfix">
+                <div class="hero ">
+                    <h2>
+                        <span>Everything</span>
+                        You Need
+                    </h2>
+                    <p>Simpleflex is best solution for you, so you can present your business and services properly.</p>
+                    <a href="#" class="btn-primary">Purchase This Theme</a>
+                </div>
+                <img src="images/mockup-1.png" alt="Mockup of Simpleflex website on iPhone">
+            </div>
+            <div class="dots wrapper">
+                <a href="#"><i class="far fa-circle"></i></a>
+                <a href="#"><i class="far fa-circle"></i></a>
+                <a href="#"><i class="far fa-circle"></i></a>
+            </div>
         </div>
     </header>
 
     <main>
-
         <section class="about-us" id="#about">
-            <div class="section-hero">
+            <div class="section-hero wrapper">
                 <h3>About Us</h3>
                 <p>Sanctus sea sed ut vero voluptua. Stet clita kasd gubergren. no sea takimata sanctus est.</p>
             </div>
-            <div class="about-us__card-container">
+            <div class="about-us__card-container wrapper">
                 <div class="about-us-card card1">
                     <img src="images/icon-modern.png" alt="Two arrows forming a circle">
                     <h4 class="figure-heading">
@@ -109,12 +115,12 @@
         </section> <!-- /.about-us -->
 
         <section class="skills">
-            <div class="section-hero">
+            <div class="section-hero wrapper">
                 <h3>Our Skills</h3>
                 <p>Air is focusing on</p>
                 <p>Web Design/WP Developmnent/HTML Integration</p>
             </div>
-            <div class="skills__container__div--card">
+            <div class="skills__container__div--card wrapper">
                 <div class="skills__div--card">
                     <figure>
                         <img src="images/circle-1.png" alt="Skilled in Web Design">
@@ -164,18 +170,18 @@
         </section> <!-- /.skills -->
 
         <section class="testimonial-quote section-triangle">
-            <blockquote class="testimonial-quote__blockquote">
+            <blockquote class="testimonial-quote__blockquote wrapper">
                 Design to express, not to impress.
             </blockquote>
-            <p>- John Tanedo -</p>
+            <p class="wrapper">- John Tanedo -</p>
         </section> <!-- /.testimonial-quote -->
 
         <section class="latest-projects">
-            <div class="section-hero">
+            <div class="section-hero wrapper">
                 <h3>Latest Projects</h3>
                 <p>Sanctus sea sed ut vero voluptua. Stet clita kasd gubergren. no sea takimata sanctus est.</p>
             </div>
-            <div class="latest-projects-gallery">
+            <div class="latest-projects-gallery wrapper">
                 <img src="images/left-arrow.png" alt="Left-arrow">
                 <img src="images/mockup-2.png" alt="Screencap of browser window containing header of website with a background image of a man with glasses rubbing his temples">
                 <img src="images/right-arrow.png" alt="Right-arrow">
@@ -184,12 +190,12 @@
 
         <section class="team">
 
-            <div class="section-hero">
+            <div class="section-hero wrapper">
                 <h3>Meet the Team</h3>
                 <p>A proud group of individuals who came together in perfect unity to present you with this</p>
             </div>
 
-            <div class="team-container">
+            <div class="team-container wrapper">
                 <div class="team-member">
                     <img src="images/headshot-1.png" alt="Headshot of Chad">
                     <ul class="social-list">
@@ -252,43 +258,45 @@
 
         </section> <!-- /.team -->
 
-        <section class="stats">
-            <div class="stats-card">
-                <img src="images/icon-1.png" alt="Icon of a human bust">
-                <h4 class="stats-card--large-numbers">
-                    2500
-                </h4>
-                <p class="btn-primary">Happy Clients</p>
-            </div>
-            <div class="stats-card">
-                <img src="images/icon-2.png" alt="Icon of a lightbulb">
-                <h4 class="stats-card--large-numbers">
-                    650
-                </h4>
-                <p class="btn-primary">Projects Made</p>
-            </div>
-            <div class="stats-card">
-                <img src="images/icon-3.png" alt="Icon of a paper airplane">
-                <h4 class="stats-card--large-numbers">
-                    5780
-                </h4>
-                <p class="btn-primary">Letters Sent</p>
-            </div>
-            <div class="stats-card">
-                <img src="images/icon-4.png" alt="Icon of a pencil">
-                <h4 class="stats-card--large-numbers">
-                    3400
-                </h4>
-                <p class="btn-primary">Briefs Wrote</p>
+        <section class="stats section-triangle">
+            <div class="stats-card-container wrapper">
+                <div class="stats-card">
+                    <img src="images/icon-1.png" alt="Icon of a human bust">
+                    <h4 class="stats-card--large-numbers">
+                        2500
+                    </h4>
+                    <p class="btn-primary">Happy Clients</p>
+                </div>
+                <div class="stats-card">
+                    <img src="images/icon-2.png" alt="Icon of a lightbulb">
+                    <h4 class="stats-card--large-numbers">
+                        650
+                    </h4>
+                    <p class="btn-primary">Projects Made</p>
+                </div>
+                <div class="stats-card">
+                    <img src="images/icon-3.png" alt="Icon of a paper airplane">
+                    <h4 class="stats-card--large-numbers">
+                        5780
+                    </h4>
+                    <p class="btn-primary">Letters Sent</p>
+                </div>
+                <div class="stats-card">
+                    <img src="images/icon-4.png" alt="Icon of a pencil">
+                    <h4 class="stats-card--large-numbers">
+                        3400
+                    </h4>
+                    <p class="btn-primary">Briefs Wrote</p>
+                </div>
             </div>
         </section> <!-- /.stats -->
 
         <section class="portfolio" id="portfolio">
-            <div class="section-hero">
+            <div class="section-hero wrapper">
                 <h3>Our Portfolio</h3>
                 <p>Sanctus sea sed ut vero voluptua. Stet clita kasd gubergren. no sea takimata sanctus est.</p>
             </div>
-            <div class="portfolio__list">
+            <div class="portfolio__list wrapper">
                 <ul>
                     <li><a href="#">All</a></li>
                     <li><a href="#">Videos</a></li>
@@ -297,7 +305,7 @@
                     <li><a href="#">Misc</a></li>
                 </ul>
             </div>
-            <div class="portfolio__gallery">
+            <div class="portfolio__gallery wrapper">
                 <figure class="portfolio__gallery--card">
                     <img src="images/portfolio-1.png" alt="Photo of hipster coffee table with pen, crystal, candle, trendy succulent, card with a lotus design, and books surrounded by a yellow fluffy blanket">
                     <figcaption>
@@ -346,16 +354,16 @@
                         I can pay my bills
                     </figcaption>
                 </figure>
-            </div>
+            </div> <!-- /.portfolio__gallery wrapper -->
             <a href="#" class="btn-secondary">Load More</a>
         </section> <!-- /.portfolio -->
 
-        <section class="blog">
-            <div class="section-hero">
+        <section class="blog" id="blog">
+            <div class="section-hero wrapper">
                 <h3>Our Blog</h3>
                 <p>Latest from our blog, nam liber tempor cum soluta nobis eleifend option congue nihil.</p>
             </div>
-            <div class="blog-container">
+            <div class="blog-container wrapper">
                 <a href="#">
                     <div class="blog-container-left article-1">
                         <img src="images/blog-1.png" alt="Open books layered">
@@ -364,13 +372,13 @@
                          <p>At vero eos et accusam et justo duo dolores et ea rebum quis aute iure reprehenderit in voluptate velit esse cillum... doloreu fugiat nulla pariatur. Sanctus sea sed takimata ut vero voluptua.</p>
                         <ul class="social-list">
                             <li>
-                                <i class="fab fa-facebook-f facebook"></i>
+                                <i class="fab a-fw fa-facebook-f facebook"></i>
                             </li>
                             <li>
-                                <i class="fab fa-twitter twitter"></i>
+                                <i class="fab a-fw fa-twitter twitter"></i>
                             </li>
                             <li>
-                                <i class="fab fa-google-plus-g google"></i>
+                                <i class="fab a-fw fa-google-plus-g google"></i>
                             </li>
                         </ul>
                     </div>
@@ -390,13 +398,13 @@
                             eu fugiat nulla pariatur. Sanctus sea sed takimata ut vero voluptua.</p>
                             <ul class="social-list">
                                 <li>
-                                    <i class="fab fa-facebook-f facebook"></i>
+                                    <i class="fab a-fw fa-facebook-f facebook"></i>
                                 </li>
                                 <li>
-                                    <i class="fab fa-twitter twitter"></i>
+                                    <i class="fab a-fw fa-twitter twitter"></i>
                                 </li>
                                 <li>
-                                    <i class="fab fa-google-plus-g google"></i>
+                                    <i class="fab a-fw fa-google-plus-g google"></i>
                                 </li>
                             </ul>
                         </div>
@@ -407,9 +415,9 @@
                             <figure class="scroll">
                                 <img src="images/blog-3.png" alt="Hand drawing on iPad Pro">
                                 <figcaption>
-                                    <i class="far fa-circle"></i>
-                                    <i class="far fa-circle"></i>
-                                    <i class="far fa-circle"></i>
+                                    <i class="far a-fw fa-circle"></i>
+                                    <i class="far a-fw fa-circle"></i>
+                                    <i class="far a-fw fa-circle"></i>
                                 </figcaption>
                             </figure>
                             <h4>Post With Slider</h4>
@@ -418,13 +426,13 @@
                             takimata ut vero voluptua.</p>
                             <ul class="social-list">
                                 <li>
-                                    <i class="fab fa-facebook-f facebook"></i>
+                                    <i class="fab a-fw fa-facebook-f facebook"></i>
                                 </li>
                                 <li>
-                                    <i class="fab fa-twitter twitter"></i>
+                                    <i class="fab a-fw fa-twitter twitter"></i>
                                 </li>
                                 <li>
-                                    <i class="fab fa-google-plus-g google"></i>
+                                    <i class="fab a-fw fa-google-plus-g google"></i>
                                 </li>
                             </ul>
                         </div>
@@ -444,52 +452,52 @@
             <img src="images/map.png" alt="Map of Lower Manhattan, forget the address is LA.">
         </section> <!-- /.map -->
 
-        <section class="contact-us">
-            <div class="section-hero">
+        <section class="contact-us" id="contact">
+            <div class="section-hero wrapper">
                 <h3>Get in Touch</h3>
                 <p>Feel free to contact us at any time, nam liber tempor cum soluta nobis eleifend option congue nihil.</p>
             </div>
 
-            <ul class="social-total">
+            <ul class="social-total wrapper">
                 <li>
-                    <a href="#"><i class="fab fa-facebook-f facebook"></i></a>
+                    <a href="#"><i class="fab a-fw fa-facebook-f facebook"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-twitter twitter"></i></a>
+                    <a href="#"><i class="fab a-fw fa-twitter twitter"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-flickr flickr"></i></a>
+                    <a href="#"><i class="fab a-fw fa-flickr flickr"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-google-plus-g google"></i></a>
+                    <a href="#"><i class="fab a-fw fa-google-plus-g google"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-linkedin-in linkedin"></i></a>
+                    <a href="#"><i class="fab a-fw fa-linkedin-in linkedin"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-dribbble dribble"></i></a>
+                    <a href="#"><i class="fab a-fw fa-dribbble dribble"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-pinterest-p pinterest"></i></a>
+                    <a href="#"><i class="fab a-fw fa-pinterest-p pinterest"></i></a>
                 </li>
             </ul>
-                <form action="http://www.focuspocus.io/magic/ea56e8bf73be91a7e8892a32c78fa42b" method="POST" class="myForm" autocomplete="off"
+            <form action="http://www.focuspocus.io/magic/ea56e8bf73be91a7e8892a32c78fa42b" method="POST" class="myForm wrapper" autocomplete="off"
                     name="myForm">
-                    <label for="name" class="visuallyhidden">Name</label>
-                    <input type="text" class="name" name="name" placeholder="Name">
-                    <label for="email" class="visuallyhidden">Email Address</label>
-                    <input type="text" class="email" placeholder="Email">
-                    <label for="message" class="visuallyhidden"></label>
-                    <textarea name="message" rows="5" class="message" placeholder="Message"></textarea>
-                    <button type="submit" class="form-button btn-secondary">
-                        Send
-                    </button>
-                </form>
+                <label for="name" class="visuallyhidden">Name</label>
+                <input type="text" class="name" name="name" placeholder="Name">
+                <label for="email" class="visuallyhidden">Email Address</label>
+                <input type="text" class="email" placeholder="Email">
+                <label for="message" class="visuallyhidden"></label>
+                <textarea name="message" rows="5" class="message" placeholder="Message"></textarea>
+                <button type="submit" class="form-button btn-secondary">
+                    Send
+                </button>
+            </form>
         </section> <!-- /.contact-us -->
     </main>
 
     <footer>
-        <div class="footer-card-container">
+        <div class="footer-card-container wrapper">
             <div class="widget">
                 <h3 class="footer-card-heading">Text Widget</h3>
                 <p>At vero eos et accusam et justo duo dolores et ea rebum.. Lorem ipsum dolor sit amet. Nam liber tempor soluta nobis eleifend

@@ -1,4 +1,22 @@
-$raleway: 'Raleway', sans-serif;
-$opensans: 'Open Sans', sans-serif;
+.main-nav ul a {
+    color: $maindarktext;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
 
+.main-nav ul a:hover {
+    color: $headerlinkhover;
+}
 
+// section hero styles 
+.section-hero {
+    h3 {
+        color: #fff;
+        font-size: 6rem;
+        text-transform: uppercase;
+    }
+    p {
+        color: $secondarygrey;
+        font-size: 2rem;
+    }
+}

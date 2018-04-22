@@ -1,0 +1,99 @@
+header {
+    position: relative;
+}
+
+header.section-triangle::after {
+    background: linear-gradient(135deg, rgba(247,197,71,1) 0%, rgba(247,197,71,1) 50%, rgba(238,190,69,1) 50%, rgba(238,190,69,1) 100%);    
+}
+
+.nav-container {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(248,248,248,1) 50%, rgba(248,248,248,1) 100%);
+}
+
+.main-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    height: 100px;
+    ul {
+        flex: 1 1;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        li + li::before {
+            content: '';
+            border-right: 1px solid #e3e3e3;
+            position: absolute;
+            height: 16px;
+        }
+    }
+    .main-nav__ul a {
+        padding: 0 40px;
+        position: relative;
+    }
+    a.no-padding-right {
+        padding-right: 0;
+    }
+    .logo-container {
+        flex: 1 1;
+    }
+}
+.responsive-nav {
+    display: none;
+}
+.hero-gradient {
+    background: linear-gradient(to right, rgba(247,197,71,1) 0%, rgba(247,197,71,1) 50%, rgba(238,190,69,1) 50%, rgba(238,190,69,1) 100%);
+}
+
+.hero-container {
+    position: relative;
+    .hero {
+        float: left;
+        width: 45%;
+        height: 100%;;
+        margin: 20% 0 10% 0;
+    }
+    img {
+        width: 70%;
+        position: absolute;
+        margin-top: 10%;
+        left: 40%;
+    }
+}
+
+.hero {
+    h2 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 8rem;
+        font-weight: 300;
+        line-height: 65px;
+        margin: 0;
+        span {
+            color: $maindarktext;
+            font-weight: 700;
+        }
+    }
+    p {
+        padding: 5% 0 10%;
+        font-size: 2rem;
+    }
+}
+
+.dots {
+    text-align: center;
+    z-index: 20;
+    position: relative;
+    padding-bottom: 2%;
+    a {
+        font-size: 1.8rem;
+        color:#fff;
+        transition: 0.3s;
+        :hover {
+            color: $maindarktext;
+        }
+    }
+}

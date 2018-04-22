@@ -3,3 +3,70 @@
 @import "typography";
 @import "components/header";
 @import "components/footer";
+
+// TypeFaces...
+// $raleway: 'Raleway', sans-serif;
+// $opensans: 'Open Sans', sans-serif;
+
+
+// Colours..
+
+
+// GLOBAL STYLES
+
+.wrapper {
+    max-width: 1171px;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: $raleway;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+a.btn-primary {
+    font-size: 1.2rem;
+    color: $maindarktext;
+    padding: 3% 5%;
+    border: 3px solid #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+header.section-triangle::after {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%) rotate(-45deg);
+    position: absolute;
+    content: '';
+    pointer-events: none;
+    top: 90%;
+    z-index: 1;
+    background: linear-gradient(135deg, rgba(247,197,71,1) 0%, rgba(247,197,71,1) 50%, rgba(238,190,69,1) 50%, rgba(238,190,69,1) 100%);
+}
+
+a.btn-primary:hover {
+    background: #fff;
+}
+
+.map {
+    img {
+        width: 100%;
+    }
+}
