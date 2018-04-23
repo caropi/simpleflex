@@ -1,3 +1,31 @@
+// FONT AWESOME LIST STYLES
+a i {
+    color: #fff;
+    font-size: 2rem;
+
+}
+
+a i.facebook {
+    background: #4f7dc0;
+}
+a i.twitter {
+    background: #00acf0;
+}
+a i.pinterest {
+    background: #cf191a;
+}
+a i.dribble {
+    background: #f7679a;
+}
+a i.flickr {
+    background: #ff0085;
+}
+a i.google {
+    background: #cc4234;
+}
+a i.linkedin {
+    background: #00649c;
+}
 .main-nav ul a {
     color: $maindarktext;
     font-size: 1.3rem;
@@ -41,18 +69,68 @@
     top: 85%;
 }
 
-h4.figure-heading {
+h4.figure-heading,
+span.figure-heading {
     color: #fff;
     font-size: 2.4rem;
     font-weight: 700;
     margin: 5%;
+    display: block;
 }
 
 .about-us-card p,
 .skills__div--card figcaption,
 .blog-container p {
-    font-size: 1.6rem;
-    color: $secondarygrey;
     text-align: center;
     display: inline-block;
+}
+
+.about-us-card p,
+.skills__div--card figcaption,
+.blog-container p,
+.widget p {
+    font-size: 1.6rem;
+    color: $secondarygrey;
+}
+
+// Testimonial quote text styling 
+
+.testimonial-quote  {
+    .testimonial-quote__blockquote {
+        font-size: 6rem;
+        color: $maindarktext;
+        font-weight: 700;
+        line-height: 55px;
+        width: 40%;
+        padding-top: 10%;
+        padding-bottom: 2%;
+        position: relative;
+    }
+    p {
+        color: #fff;
+        font-size: 4rem;
+        font-weight: 300;
+        line-height: 55px;
+        padding-bottom: 8%;
+    }
+}
+
+.testimonial-quote blockquote::before,
+.testimonial-quote blockquote::after {
+    font-size: 140px;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    top: 55%;
+    font-family: $raleway;
+}
+
+.testimonial-quote blockquote::before {
+    content: '“';
+    right: 100%;
+}
+
+.testimonial-quote blockquote::after {
+    content: '”';
+    left: 100%;
 }

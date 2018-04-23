@@ -37,7 +37,8 @@ ul {
     flex-flow: row wrap;
 }
 
-a.btn-primary {
+a.btn-primary,
+.btn-primary {
     font-size: 1.2rem;
     color: $maindarktext;
     padding: 3% 5%;
@@ -45,6 +46,7 @@ a.btn-primary {
     font-weight: 700;
     text-transform: uppercase;
     transition: 0.3s;
+    text-align: center;
 }
 
 .section-triangle::after {
@@ -69,12 +71,37 @@ a.btn-primary:hover {
         width: 100%;
     }
 }
+.about-us,
+.latest-projects,
+.portfolio,
+.blog-container {
+    background: $mediumbg;
+}
+
+.team,
+.blog,
+.contact-us,
+footer h5 {
+    background: $darkgreybg;
+}
+
+.social {
+    margin: 10%;
+    li {
+        padding: 5px;
+        text-align: center;
+        i {
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}
+
 
 // ABOUT US SECTION
 
-.about-us {
-    background: $lightbg;
-}
 
 .about-us__card-container {
     display: flex;
@@ -86,19 +113,20 @@ a.btn-primary:hover {
         text-align: center;
         max-width: 370px;
         min-width: 250px;
-        flex: 3 1;
+        flex:1 1;
         padding: 4% 1%;
-        background: $mediumgrey;  
+        background: $cardbg;  
         p {
-            font-size: 1.6rem;
-            color: $secondarygrey;
-            text-align: center;
+
             width: 90%;
-            display: inline-block;
             line-height: 24px;
             margin: 0;
         }
-
+    .about-us-card::before,
+    .about-us-card::after {
+        flex: 0 0 20px;
+        content: '';
+    }
     }
     .card1 {
         border-bottom: 10px solid $yellow;
@@ -121,5 +149,87 @@ a.btn-primary:hover {
         flex-flow: row wrap;
         justify-content: space-between;
         padding-bottom: 10%;
+        .skills__div--card {
+            flex: 4 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
+}
+
+// TESTIMONIAL SECTION 
+
+.testimonial-quote {
+    position: relative;
+    background: linear-gradient(to right, rgba(255,111,111,1) 0%, rgba(255,111,111,1) 50%, rgba(247,108,108,1) 50%, rgba(247,108,108,1) 100%);
+    text-align: center;
+}
+
+.testimonial-quote::after {
+    background: linear-gradient(135deg, rgba(255,111,111,1) 0%, rgba(255,111,111,1) 50%, rgba(247,108,108,1) 50%, rgba(247,108,108,1) 100%);
+    top: 94%;
+}
+
+// LATEST PROJECTS SECTION
+
+.latest-projects {
+    .latest-projects-gallery {
+        text-align: center;
+        position: relative;
+        .arrow {
+            position: absolute;
+            top: 50%;
+        }
+        .arrow-1 {
+            left: 0;
+        }
+
+        .arrow-2 {
+            right: 0;
+        }
+    }
+}
+
+// TEAM SECTION
+
+.team-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    .team-member {
+        max-width: 270px;
+        background:$mediumgrey;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 10px solid $headerlinkhover;
+        img {
+            width: 100%;
+        }
+        ul {
+            padding: 0;
+        }
+    }
+}
+
+// STATS SECTION
+
+.stats {
+    background: linear-gradient(to right, rgba(164,203,97,1) 0%, rgba(164,203,97,1) 50%, rgba(169,210,100,1) 50%, rgba(169,210,100,1) 100%);
+    position: relative;
+    .stats-card-container {
+        display: flex;
+        flex-flow: row wrap;
+        .stats-card {
+            max-width: 180px;
+        }
+    }
+}
+
+.stats::after {
+    background: linear-gradient(135deg, rgba(164,203,97,1) 0%, rgba(164,203,97,1) 50%, rgba(169,210,100,1) 50%, rgba(169,210,100,1) 100%);
 }
