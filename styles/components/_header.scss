@@ -2,9 +2,7 @@ header {
     position: relative;
 }
 
-header.section-triangle::after {
-    background: linear-gradient(135deg, rgba(247,197,71,1) 0%, rgba(247,197,71,1) 50%, rgba(238,190,69,1) 50%, rgba(238,190,69,1) 100%);    
-}
+
 
 .nav-container {
     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(248,248,248,1) 50%, rgba(248,248,248,1) 100%);

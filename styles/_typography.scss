@@ -4,7 +4,6 @@ a i {
     font-size: 2rem;
 
 }
-
 a i.facebook {
     background: #4f7dc0;
 }
@@ -133,4 +132,33 @@ span.figure-heading {
 .testimonial-quote blockquote::after {
     content: '”';
     left: 100%;
+}
+
+.map {
+    font-family: $opensans;
+    h5 {
+        color: #fff;
+        font-family: $opensans;
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+
+    a{
+        color: $maindarktext;
+        font-size: 8rem;
+        font-weight: 700;
+        border: 3px solid #fff;
+        padding: 1% 5%;
+        display: inline-block;
+        h4 {
+            margin: 0;
+        }
+    }
+    p {
+        color: $maindarktext;
+        font-size: 3rem;
+        font-weight: 300;
+        padding-bottom: 20px;
+    }
 }

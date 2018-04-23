@@ -48,6 +48,9 @@ a.btn-primary,
     transition: 0.3s;
     text-align: center;
 }
+a.btn-primary:hover {
+    background: #fff;
+}
 
 .section-triangle::after {
     left: 50%;
@@ -61,10 +64,11 @@ a.btn-primary,
     top: 96%;
     z-index: 1;
 }
-
-a.btn-primary:hover {
-    background: #fff;
+header.section-triangle::after,
+.map::after {
+    background: linear-gradient(135deg, rgba(247,197,71,1) 0%, rgba(247,197,71,1) 50%, rgba(238,190,69,1) 50%, rgba(238,190,69,1) 100%);    
 }
+
 
 .map {
     img {
@@ -114,7 +118,7 @@ footer h5 {
         max-width: 370px;
         min-width: 250px;
         flex:1 1;
-        padding: 4% 1%;
+        padding: 50px 10px;
         background: $cardbg;  
         p {
 
@@ -211,7 +215,7 @@ footer h5 {
             width: 100%;
         }
         ul {
-            padding: 0;
+            padding: 20px;
         }
     }
 }
@@ -224,12 +228,147 @@ footer h5 {
     .stats-card-container {
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-between;
         .stats-card {
-            max-width: 180px;
+            max-width: 370px;
+            padding: 100px 6%;
+            text-align: center;
+            img {
+                width: auto;
+                height: 101px;
+            }
+            h4 {
+                color: $maindarktext;
+                font-size: 60px;
+                font-weight: 700;
+                margin: 20px 0;
+                font-family: $opensans;
+            }
+            p {
+                padding: 15px 25px;
+                width: 100%;
+                margin: 0;
+                display: inline-block;
+                transition: 0.3s;
+            }
+            p:hover {
+                background: #fff;
+            }
         }
     }
 }
 
 .stats::after {
     background: linear-gradient(135deg, rgba(164,203,97,1) 0%, rgba(164,203,97,1) 50%, rgba(169,210,100,1) 50%, rgba(169,210,100,1) 100%);
+    top: 94%;
 }
+
+// PORTFOLIO SECTION 
+
+.portfolio__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2;
+    img {
+        width: 100%;
+        max-width: 480px;
+        display: block;
+    }
+    p {
+        display: block;
+        background: #fff;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 30px 0;
+        font-weight: 700;
+        position: relative;
+    }
+    p::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        position: absolute;
+        border-bottom:10px solid #fff;
+        top: -20px;
+        left: 47%;    
+    }
+}
+
+// BLOG SECTION
+
+.blog-grid-container {
+    display: grid; 
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+// MAP SECTION
+.map {
+    position: relative;
+    background: linear-gradient(to right, rgba(247,197,71,1) 0%, rgba(247,197,71,1) 50%, rgba(238,190,69,1) 50%, rgba(238,190,69,1) 100%);  
+    z-index: 1;
+    text-align: center;  
+    padding: 50px 0 0 0;
+    img {
+        display: block;
+    }
+}
+
+.map::after {
+    top: 355px;
+    z-index: 10;
+}
+
+
+// CONTACT US SECTION
+
+.contact-us {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    ul {
+        margin: 20px 20px 50px 20px;
+        padding: 0;
+    }
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        margin: 0;
+        width: 55%;
+        input,
+        textarea {
+            background: $mediumgrey;
+            border: none;
+            color: $secondarygrey;
+            font-size: 1.6rem;
+            ::-webkit-input-placeholder {
+            text-align: center;
+            }
+
+            :-moz-placeholder { /* Firefox 18- */
+            text-align: center;  
+            }
+
+            ::-moz-placeholder {  /* Firefox 19+ */
+            text-align: center;  
+            }
+
+            :-ms-input-placeholder {  
+            text-align: center; 
+            }
+        }
+
+        button.btn-secondary {
+            color: #fff;
+            display: block;
+        }
+    }
+
+}
+
