@@ -304,8 +304,33 @@ footer h5 {
     display: grid; 
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(246px 1fr));
+    .blog-container-left {
+        grid-row: 1 / span 2;
+        border-bottom: 10px solid $yellow;
+    }
+    .article__style-right {
+        display: flex;
+        flex-flow: row wrap;
+        .text-container {
+            flex: 1 1 0;
+            p {
+                width: 50%;
+            }
+            ul {
+                padding: 0;
+            }
+        }
+    }
+    .article-2 {
+        border-right: 10px solid $red;
+    }
+    .article-3 {
+        border-right: 10px solid $green;
+        grid-column: 3 / 2;
+    }
 }
+
 
 // MAP SECTION
 .map {
