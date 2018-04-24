@@ -351,6 +351,7 @@ footer h5 {
         font-size: 1.2rem;
         font-weight: 700;
         text-transform: uppercase;
+        margin: 0;
     }
     .article-2,
     .article-3 {
@@ -366,6 +367,10 @@ footer h5 {
         flex-flow: column wrap;
         align-items: center;
         justify-content: space-between;
+        height: 512px;
+        p {
+            margin: 0;
+        }
     }
     .right-articles {
         width: calc(50% - 15px);
@@ -391,6 +396,26 @@ footer h5 {
                 padding: 4% 6%;
             }
         }
+        .scroll {
+            position: relative;
+            img {
+                z-index: 1;
+            }
+            figcaption {
+                position: absolute;
+                z-index: 10;
+                bottom: 0;
+                left: 45%;
+                bottom: 10%;
+                i {
+                    color: #fff;
+                    font-size: 1.4rem;
+                }
+                i:hover {
+                    color: #000;
+                }
+            }
+        }
         .text-container {
             width: calc(50% - 25px);
             margin-left: 10px;
@@ -398,15 +423,15 @@ footer h5 {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             p {
                 display: block;
-                margin-left: 25px;
-                margin-right: 25px;
+                margin: 0;
             }
             ul {
                 padding: 0;
                 text-align: center;
+                margin: 0;
                 li {
                     display: inline-block;
                     text-align: center;
