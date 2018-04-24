@@ -7,7 +7,8 @@ footer {
     justify-content: space-between;
     padding: 50px 0;
     .widget {
-        flex: 1 1 0;
+        flex: 1 2 0;
+        min-width: 270px;
         max-width: 270px;
         .footer-card-heading {
             color: $maindarktext;
@@ -62,8 +63,16 @@ footer {
             border: 3px solid $maindarktext;
         }
     }
-    h5 {
-        text-align: center;
-        display: block;
+}
+
+.copyright h5 {
+    text-align: center;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: $secondarygrey;
+    padding: 50px; 
+    a {
+        color: #fff;
     }
 }
