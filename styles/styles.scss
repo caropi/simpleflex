@@ -37,6 +37,19 @@ ul {
     flex-flow: row wrap;
 }
 
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 a.btn-primary,
 .btn-primary {
     font-size: 1.2rem;
@@ -50,6 +63,18 @@ a.btn-primary,
 }
 a.btn-primary:hover {
     background: #fff;
+}
+
+.btn-secondary {
+    border: 3px solid #fff;
+    color: #fff;
+    background: transparent;
+    text-align: center;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 50px auto;
+    display: inline-block;
 }
 
 .section-triangle::after {
@@ -90,7 +115,8 @@ footer h5 {
 }
 
 .social {
-    margin: 10%;
+    margin: 20px;
+    padding: 0;
     li {
         padding: 5px;
         text-align: center;
@@ -312,8 +338,14 @@ footer h5 {
     .article__style-right {
         display: flex;
         flex-flow: row wrap;
+        figure {
+            width: 50%;
+            figcaption {
+                display: none;
+            }
+        }
         .text-container {
-            flex: 1 1 0;
+            width: 50%;
             p {
                 width: 50%;
             }
@@ -357,41 +389,47 @@ footer h5 {
     flex-flow: column wrap;
     align-items: center;
     ul {
-        margin: 20px 20px 50px 20px;
-        padding: 0;
+        margin: 20px 20px 20px 20px;
     }
     form {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-between;
-        margin: 0;
+        margin: 50px 0;
         width: 55%;
+        ::-webkit-input-placeholder {
+            text-align: center;
+        }
+        
+        :-moz-placeholder { /* Firefox 18- */
+            text-align: center;  
+        }
+        
+        ::-moz-placeholder {  /* Firefox 19+ */
+            text-align: center;  
+        }
+        
+        :-ms-input-placeholder {  
+            text-align: center; 
+        }
+
         input,
         textarea {
             background: $mediumgrey;
             border: none;
             color: $secondarygrey;
             font-size: 1.6rem;
-            ::-webkit-input-placeholder {
-            text-align: center;
-            }
-
-            :-moz-placeholder { /* Firefox 18- */
-            text-align: center;  
-            }
-
-            ::-moz-placeholder {  /* Firefox 19+ */
-            text-align: center;  
-            }
-
-            :-ms-input-placeholder {  
-            text-align: center; 
-            }
+            width: 100%;
+            resize: none;
+            margin: 10px 0;
+            padding: 15px;
         }
 
         button.btn-secondary {
             color: #fff;
-            display: block;
+            display: inline-block;
+            width: 120px;
+            margin: 10px auto;
         }
     }
 
