@@ -142,6 +142,10 @@ footer h5 {
     flex-flow: row wrap;
     justify-content: space-between;
     padding-bottom: 10%;
+    @media (max-width:600px) {
+        justify-content: space-around;
+        align-items: center;
+    }
     .about-us-card {
         flex-wrap: wrap;
         text-align: center;
@@ -156,12 +160,13 @@ footer h5 {
             line-height: 24px;
             margin: 0;
         }
-    .about-us-card::before,
-    .about-us-card::after {
-        flex: 0 0 20px;
-        content: '';
+        .about-us-card::before,
+        .about-us-card::after {
+            flex: 0 0 20px;
+            content: '';
+        }
     }
-    }
+
     .card1 {
         border-bottom: 10px solid $yellow;
     }
@@ -194,6 +199,11 @@ footer h5 {
             }
         }
     }
+            @media (max-width: 500px) {
+                display: none;
+
+            }
+
 }
 
 // TESTIMONIAL SECTION 
@@ -287,6 +297,10 @@ footer h5 {
             @media (max-width: 1127px) {
                 margin:0 5%;
                 padding: 20px 6%;
+            }
+            @media (max-width: 500px) {
+                margin: 0;
+                padding: 20px;
             }
             img {
                 width: auto;
