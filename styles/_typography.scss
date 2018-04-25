@@ -95,6 +95,9 @@ span.figure-heading {
 // Testimonial quote text styling 
 
 .testimonial-quote  {
+    @media (max-width: 768px) {
+        display: none;
+}
     .testimonial-quote__blockquote {
         font-size: 6rem;
         color: $maindarktext;

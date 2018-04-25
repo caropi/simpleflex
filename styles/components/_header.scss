@@ -21,16 +21,34 @@ header {
         display: flex;
         justify-content: flex-end;
 
-        li + li::before {
-            content: '';
-            border-right: 1px solid #e3e3e3;
-            position: absolute;
-            height: 16px;
+        @media (max-width: 1112px){
+            margin-right: 20px;
+        }        
+        @media (max-width: 900px){
+            flex-direction: column;
+            text-align: right;
+        }   
+    }
+    li {
+    }
+    li + li::before {
+        content: '';
+        border-right: 1px solid #e3e3e3;
+        position: absolute;
+        height: 16px;
+        @media (max-width: 1112px){
+            border-right: none;
         }
     }
     .main-nav__ul a {
         padding: 0 40px;
         position: relative;
+            @media (max-width: 1112px){
+                padding: 0 10px 0 40px;
+            }   
+            @media (max-width: 900px) {
+                padding: 0;
+            }     
     }
     a.no-padding-right {
         padding-right: 0;
@@ -39,9 +57,10 @@ header {
         flex: 1 1;
     }
 }
-.responsive-nav {
-    display: none;
-}
+
+
+
+
 .hero-gradient {
     z-index: 3;
     background: linear-gradient(to right, rgba(247,197,71,1) 0%, rgba(247,197,71,1) 50%, rgba(238,190,69,1) 50%, rgba(238,190,69,1) 100%);
@@ -54,16 +73,32 @@ header {
         width: 45%;
         height: 100%;;
         margin: 20% 0 10% 0;
+        @media (max-width:768px) {
+            width: 90%;
+            text-align: center;
+        }
     }
     img {
         width: 65%;
         position: absolute;
         margin-top: 12%;
         left: 40%;
+        @media (max-width: 1207px) {
+            width: 50%;
+            left: 50%;
+            top: 20%;
+        }
+        @media (max-width: 768px){
+            display: none
+        }        
     }
 }
 
 .hero {
+    @media (max-width: 1207px){
+        padding-left: 2%;
+    }
+
     h2 {
         text-transform: uppercase;
         color: white;
@@ -74,6 +109,9 @@ header {
         span {
             color: $maindarktext;
             font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            font-size: 15vw;
         }
     }
     p {
